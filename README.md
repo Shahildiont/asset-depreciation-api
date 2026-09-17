@@ -61,6 +61,49 @@ Example request:
   "duration": 5
 }
 ```
+### Example Response
+
+```json
+{
+  "cost": 10000,
+  "salvageValue": 10,
+  "duration": 5,
+  "salvageAmount": 1000,
+  "annualDepreciation": 1800,
+  "yearlyDepreciation": [
+    {
+      "year": 1,
+      "openingValue": 10000,
+      "depreciation": 1800,
+      "closingValue": 8200
+    },
+    {
+      "year": 2,
+      "openingValue": 8200,
+      "depreciation": 1800,
+      "closingValue": 6400
+    },
+    {
+      "year": 3,
+      "openingValue": 6400,
+      "depreciation": 1800,
+      "closingValue": 4600
+    },
+    {
+      "year": 4,
+      "openingValue": 4600,
+      "depreciation": 1800,
+      "closingValue": 2800
+    },
+    {
+      "year": 5,
+      "openingValue": 2800,
+      "depreciation": 1800,
+      "closingValue": 1000
+    }
+  ]
+}
+```
 
 Where:
 
